@@ -9,3 +9,8 @@ header{
     padding: 15px;
     text-align: center;
 }
+
+form{
+    width: 50%;
+    margin: 20px auto;
+}
