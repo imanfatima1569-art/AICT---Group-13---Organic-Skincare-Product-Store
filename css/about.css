@@ -1,4 +1,4 @@
-/* 1. General Reset & Base Styles */
+/* 1. General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,160 +12,114 @@ body {
     line-height: 1.6;
 }
 
-/* 2. Header & Navigation */
-.topbar {
-    background-color: #2f6f4e; /* Your Brand Green */
+/* 2. Header & Navigation (Green Top Bar) */
+.navbar {
+    background-color: #2f6f4e; /* Deep Forest Green */
     color: white;
-    padding: 20px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 25px 30px;
+    text-align: center;
+    width: 100%;
 }
 
 .logo {
-    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
+/* Green Nav Links */
 nav a {
-    color: white;
+    color: #ffffff; /* White by default for contrast on green */
     text-decoration: none;
-    margin-left: 20px;
+    margin: 0 15px;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #a8d5ba;
+    color: #a8d5ba; /* Changes to a light green when you hover */
 }
 
-/* 3. Hero Section */
+/* 3. Hero & Content Sections */
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7));
 }
 
 .hero h2 {
-    font-size: 2.5rem;
     color: #2f6f4e;
+    font-size: 2.5rem;
     margin-bottom: 15px;
-}
-
-.hero p {
-    max-width: 700px;
-    margin: 0 auto 30px;
-    font-size: 1.1rem;
 }
 
 .hero img {
-    max-width: 300px;
+    max-width: 400px;
+    width: 100%;
     border-radius: 15px;
+    margin-top: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* 4. About Content (Flex Layout) */
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.about-content .text { flex: 1; }
-.about-content .image { flex: 1; }
-.about-content img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* 5. Mission Section */
-.mission {
-    background-color: white;
-    padding: 50px;
-    text-align: center;
-}
-
-.mission h3 {
-    color: #2f6f4e;
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-/* 6. Why Choose Us (Grid Layout) */
-.values {
-    padding: 50px;
+.group {
     background-color: #eaf6ee;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
     text-align: center;
 }
 
-.values h3 {
+.group h3 {
     color: #2f6f4e;
     margin-bottom: 10px;
 }
 
-.values-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+.group ul {
+    list-style: none;
 }
 
-.values-box div {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Fixed your rgba values */
-    transition: transform 0.3s ease;
-}
-
-.values-box div:hover {
-    transform: translateY(-5px);
-}
-
-.values-box h4 {
-    margin: 10px 0;
-    color: #2f6f4e;
-}
-
-/* 7. Group Members (Home Page) */
-.group {
-    background-color: white;
+/* 4. Form Styling (Order Page) */
+form {
+    width: 50%;
     max-width: 500px;
     margin: 40px auto;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border-left: 5px solid #2f6f4e;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.group ul { list-style: none; }
-.group li { padding: 8px 0; border-bottom: 1px dotted #ddd; }
+input, select, textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-/* 8. Footer */
-footer {
-    background-color: #2f6f4e;
+button {
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px;
+    background-color: #2f6f4e; /* Changed from blue to green to match theme */
     color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #24563b;
+}
+
+/* 5. Footer */
+footer {
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
-}
-
-/* 9. Responsive Design */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .topbar {
-        flex-direction: column;
-        gap: 15px;
-    }
+    background-color: #2f5d3a;
+    color: white;
+    margin-top: 50px;
 }
