@@ -1,125 +1,25 @@
-/* 1. General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 40px;
+    align-items: center;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f3f7f3;
-    color: #333;
-    line-height: 1.6;
+.about-content .text {
+    flex: 1;
 }
 
-/* 2. Header & Navigation (Green Top Bar) */
-.top-bar {
-    background-color:#2f6f4e; /* Deep Forest Green */
-    color: white;
-    padding: 25px 30px;
-    text-align: center;
-    width: 100%;
-}
-
-.logo {
-    color: white;
-    margin-bottom: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-/* Green Nav Links */
-nav a {
-    color: #ffffff; /* White by default for contrast on green */
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #a8d5ba; /* Changes to a light green when you hover */
-}
-
-/* 3. Hero & Content Sections */
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero h2 {
+.about-content .text h3 {
     color: #2f6f4e;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
 }
 
-.hero img {
-    max-width: 400px;
+.about-content .image {
+    flex: 1;
+}
+
+.about-content img {
     width: 100%;
-    border-radius: 15px;
-    margin-top: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.group {
-    background-color: #eaf6ee;
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 25px;
     border-radius: 12px;
-    text-align: center;
-}
-
-.group h3 {
-    color: #2f6f4e;
-    margin-bottom: 10px;
-}
-
-.group ul {
-    list-style: none;
-}
-
-/* 4. Form Styling (Order Page) */
-form {
-    width: 50%;
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-input, select, textarea {
-    width: 100%;
-    margin: 8px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    width: 100%;
-    margin: 15px 0;
-    padding: 12px;
-    background-color: #2f6f4e; /* Changed from blue to green to match theme */
-    color: white;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-button:hover {
-    background-color: #24563b;
-}
-
-/* 5. Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2f5d3a;
-    color: white;
-    margin-top: 50px;
 }
