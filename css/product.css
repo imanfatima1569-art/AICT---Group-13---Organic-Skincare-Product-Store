@@ -1,81 +1,60 @@
-/* General Body Styles */
+/* 1. General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9fbf9;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Header & Top Bar */
+/* 2. Header & Navigation */
 .top-bar {
-    background-color: #2f6f4e; /* Your specific green */
+    background-color: #2f6f4e;
     color: white;
     padding: 15px 30px;
     text-align: center;
 }
 
-.top-bar nav {
-    margin-top: 10px;
-}
-
-.top-bar a {
+nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
 }
 
-/* Cart Display */
+/* 3. Cart & Headings */
 .cart {
     text-align: right;
-    padding: 10px 50px;
-    font-size: 1.1rem;
+    padding: 15px 50px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #2f6f4e;
 }
 
-/* Hero Section (if used on Home page) */
-.hero {
-    background-color: #e3f2e6;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero h2 {
-    font-size: 36px;
-    color: #2f6f4e;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-/* Products Layout */
 .heading {
     text-align: center;
     margin: 30px 0;
     color: #2f6f4e;
 }
 
+/* 4. Products Grid */
 .products-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px 50px;
+    padding: 0 50px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Product Card Styling */
+/* 5. Product Cards */
 .product-card {
     background: white;
     border-radius: 12px;
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
+    transition: transform 0.2s;
 }
 
 .product-card:hover {
@@ -84,8 +63,8 @@ body {
 
 .product-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover; /* Keeps images from stretching */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Prevents stretching */
     border-radius: 10px;
 }
 
@@ -95,21 +74,19 @@ body {
 }
 
 .product-card button {
-    margin-top: 10px;
     padding: 8px 15px;
     border: none;
     background-color: #2f6f4e;
     color: white;
     border-radius: 6px;
     cursor: pointer;
-    width: auto; /* Overriding global button width for cards */
 }
 
 .product-card button:hover {
     background-color: #24573d;
 }
 
-/* Table Styling */
+/* 6. Pricing Table */
 table {
     width: 70%;
     margin: 40px auto;
@@ -122,7 +99,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 12px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -131,39 +108,7 @@ th {
     color: white;
 }
 
-/* Form Styling */
-form {
-    width: 50%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-input, select {
-    width: 100%;
-    margin: 8px 0;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding doesn't break width */
-}
-
-/* Order Button inside Form */
-form button {
-    width: 100%;
-    margin: 8px 0;
-    padding: 10px;
-    background-color: rgb(74, 191, 236);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-/* Footer Styling */
+/* 7. Footer */
 footer {
     text-align: center;
     padding: 20px;
